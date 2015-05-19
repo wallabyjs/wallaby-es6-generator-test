@@ -31,10 +31,6 @@ module.exports = function (wallaby) {
                 runner: '--harmony',
                 env: 'PARAM1=true;PARAM2=false'
             }
-        },
-
-        bootstrap: function () {
-            global.regeneratorRuntime = require('babel-runtime/regenerator').default;
         }
     }
 };
