@@ -11,7 +11,7 @@ module.exports = function (wallaby) {
         ],
 
         preprocessors: {
-            '**/*.js': file => require('babel').transform(file.content, {sourceMap: true})
+            '**/*.js': file => require('babel').transform(file.content, {sourceMap: true, optional: ["runtime"] })
         },
 
         env: {
